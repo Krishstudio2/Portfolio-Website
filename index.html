@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" id="theme" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" href="assets/head_icon.png" />
+
+    <title>Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+    </div>
+
+    <!-- Switch Mode Light&Dark -->
+
+    <div id="mode">
+      <input type="checkbox" id="toggle-mode" />
+      <label for="toggle-mode" id="slider">
+        <i class="fa-regular fa-sun iswitch" id="light"></i>
+        <i class="fa-regular fa-moon iswitch" id="dark"></i>
+      </label>
+    </div>
+    
+    
+
+    <!-- Scroll-to-top button -->
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+      <a class="navbar-brand navbar-logo" href="#">PORTFOLIO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="leftSide"></div>
+            <div class="rightSide"></div>
+          </div>
+          <li class="nav-item active" id="li_home">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item" id="li_about">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item" id="li_skill_section">
+            <a class="nav-link" href="#skill_section">Skills</a>
+          </li>
+          <li class="nav-item" id="li_education">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item" id="li_projects">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item" id="li_experience">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item" id="li_contact">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="text">
+        <p>
+          Hey there
+          <img
+            src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
+            width="40px"
+          />
+          !
+        </p>
+        <h1>I am <span>Krishnasamy P</span></h1>
+        <!-- <h1>
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Web Developer!", "Software Developer!" , "Python Developer!"]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h1> -->
+
+        <button class="btn_resume">
+          <a href="assets/Resume.pdf" target="_blank">Resume</a>
+        </button>
+      </div>
+      <div class="images">
+       <img src="assets\profile.jpg" width="380" height="400"/>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about-me">
+      <div class="container" data-aos="fade-up">
+        <div id="#about-heading"><h1>About Me</h1></div>
+        <div class="line">
+          <span>&#8674;</span>
+          <p class="desc-me">
+            Web development involves creating websites and web applications using HTML, CSS, and JavaScript for frontend development. Backend development utilizes technologies like Node.js, Django, or Flask for server-side logic and database interactions. Focus on responsive design, database management, and security practices to build scalable and secure web applications. Continuous learning and staying updated with new technologies are key to mastering web development.
+          </p>
+        </div>
+        <div class="line">
+          <span>&#8674;</span>
+
+          <p class="desc-me">
+            A Python developer skilled in Django and Tkinter specializes in web and desktop application development. With Django, they build robust and scalable web applications using the Model-View-Template (MVT) architecture, integrating databases, user authentication, and RESTful APIs. Tkinter expertise enables them to create intuitive desktop GUI applications, utilizing widgets for user interfaces and event-driven programming. A proficient Django and Tkinter developer combines backend web development with desktop application development, offering versatile solutions across different platforms.
+          </p>
+        </div>
+     
+    <!-- Skills section -->
+    <section id="skill_section" class="skills">
+      <div class="container">
+        <h2 id="head-skill">Skills</h2>
+
+        <div class="skill-category" data-aos="fade-right">
+          <h3>Technical Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <i class="fa-brands fa-html5"></i
+              ><span class="skill-name">HTML</span>
+              <div class="prg">
+                <progress class="skillset" value="95" max="100"></progress>
+                <span class="amt">95%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-css3-alt"></i
+              ><span class="skill-name">CSS</span>
+              <div class="prg">
+                <progress class="skillset" value="90" max="100"></progress>
+                <span class="amt">90%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-js"></i
+              ><span class="skill-name">JavaScript</span>
+              <div class="prg">
+                <progress class="skillset" value="84" max="100"></progress>
+                <span class="amt">84%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-react"></i
+              ><span class="skill-name">React</span>
+              <div class="prg">
+                <progress class="skillset" value="80" max="100"></progress>
+                <span class="amt">80%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-angular"></i
+              ><span class="skill-name">Angular</span>
+              <div class="prg">
+                <progress class="skillset" value="60" max="100"></progress>
+                <span class="amt">60%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-node-js"></i
+              ><span class="skill-name">Node.js</span>
+              <div class="prg">
+                <progress class="skillset" value="70" max="100"></progress>
+                <span class="amt">70%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-python"></i
+              ><span class="skill-name">Python</span>
+              <div class="prg">
+                <progress class="skillset" value="85" max="100"></progress>
+                <span class="amt">85%</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-database"></i
+              ><span class="skill-name">MongoDB</span>
+              <div class="prg">
+                <progress class="skillset" value="65" max="100"></progress>
+                <span class="amt">65%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" data-aos="fade-left">
+          <h3>Professional Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="circle-bar">
+                <div class="cic-value">85%</div>
+                <div class="cic-name">Creativity</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="circle-bar" id="b">
+                <div class="cic-value">60%</div>
+                <div class="cic-name">Communication</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="circle-bar">
+                <div class="cic-value">90%</div>
+                <div class="cic-name">Problem Solving</div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="circle-bar">
+                <div class="cic-value">80%</div>
+                <div class="cic-name">Teamwork</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education part">
+      <div class="container">
+        <h1 id="edu">Education</h1>
+        <div class="timeline">
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>SSLC</h2>
+              <p>
+                Bishop Heber Higher secondary school, Tiruchirappalli.
+                <BR>
+                SSLC
+                <br>
+                76%
+                <br>
+                2017 - 2018
+              </p>
+            </div>
+          </div>
+          <div class="contain right" data-aos="fade-left">
+            <div class="content">
+              <h2>HSC</h2>
+              <p>
+                <p>
+                  Bishop Heber Higher secondary school, Tiruchirappalli.
+                  <BR>
+                  HSC
+                  <br>
+                  73%
+                  <br>
+                  2019 - 2020
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>B.E</h2>
+              <p>
+                <p>
+                  M.I.E.T. Engineering college, Trichy.
+                  <BR>
+                  B.E 
+                  <br>
+                  Coputer Science and Engineering
+                  <br>
+                  7.7 CGP
+                  <br>
+                  2020 - 2024
+                </p>
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div id="project-heading">
+          <h1>Projects</h1>
+        </div>
+        <div class="box">
+          <div class="project" data-aos="fade-center">
+            <h3>Project 1</h3>
+            <p>AI POWERED NOTES GENERATION. 
+              Automate the process of speech recognition and text extraction
+              from video using AI techniques.
+              Eliminates the need for manual transcription or captioning.
+            </p>
+            <p>
+              <strong>Skills and Tools:</strong> HTML, CSS, Python.
+            </p>
+            <div class="buttons">
+              <button>
+                <a
+                  href="https://github.com/Krishstudio2/AI-powered-Notes-generation-from-video-to-text.git"
+                  target="_blank"
+                  >GitHub Repo</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+       <div class="box">
+            <div class="project" data-aos="fade-center">
+              <h3>Project 2</h3>
+              <p>AILMENT PROGNOUSTICATION. 
+                A signup & login page is a web interface that allows users to create a new account (signup).
+                A disease prediction model is built using a Machine Learning algorithm that is Random Forest Algorithm. 
+                Based on the symptoms that are input by the user, the disease is predicted.
+
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, Python, Jupyter Notebook                
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://github.com/Krishstudio2/AILMENT-PROGNOUSTICATION.git"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+      <div class="box">
+        <div class="project" data-aos="fade-center">
+          <h3>Project 3</h3>
+          <p>DECIPHERING REVIEW INSIGHTS : A NEXT-GEN RECOMMENDATION SYSTEM.
+            Design a sophisticated sentiment analysis system incorporating web-scraping mechanisms 
+            to extract nuanced product reviews, accurately categorize sentiments  based on 
+            user input for robust analysis and decision-making
+
+          </p>
+          <p>
+            <strong>Skills and Tools:</strong> HTML, CSS, Python
+          </p>
+          <div class="buttons">
+            <button>
+              <a
+                href="https://github.com/Krishstudio2/Deciphering-Review-Insights-A-Next-Gen-Recommendation-System.git"
+                target="_blank"
+                >GitHub Repo</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section  -->
+    <section id="experience" class="main">
+      <h5 class="heading">Experience</h5>
+      <div class="exp" data-aos="slide-in">
+        <ul>
+          <li>
+            <h3 class="title">Internship or volunteer work</h3>
+            <p>
+              Seeking a challenging internship in computer science engineering to enhance technical proficiency and contribute to innovative projects.
+            
+              Enthusiastically pursuing volunteer opportunities in computer science engineering to apply theoretical knowledge in practical settings and support impactful initiatives
+            </p>
+          <li>
+            <h3 class="title">Academic projects & Extre curricular Achievement</h3>
+            <p>
+             Led a team in developing a real-time web application and a neural network model for image recognition as part of academic projects, showcasing innovation and technical proficiency in computer science engineering
+             
+             Received recognition for leadership, organizing coding competitions and workshops to foster learning and collaboration within the student community
+            </p>
+          <li>
+            <h3 class="title">Personl Projects</h3>
+            <p>
+              Designed and implemented a personal website with interactive features using HTML, CSS, and JavaScript, demonstrating creativity and technical proficiency in web development.
+              </p>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <footer class="footer-section" id="contact">
+      <div class="container">
+        <h2 style="text-align: center">Contact Me</h2>
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a
+                  href="https://www.google.com/maps/place/Tiruchirappalli,+Tamil+Nadu/@10.8160024,78.6066254,12z/data=!3m1!4b1!4m6!3m5!1s0x3baaf50ff2aecdad:0x6de02c3bedbbaea6!8m2!3d10.7904833!4d78.7046725!16zL20vMDE5Zmx2?entry=ttu"
+                  class="contact-items"
+                  target="_blank"
+                >
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="cta-text">
+                    <h4>Address</h4>
+                    <span>Tiruchirappalli, Tamilnadu, India</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a
+                  href="tel:+919345295731"
+                  class="contact-items"
+                  target="_blank"
+                >
+                  <i class="fas fa-phone"></i>
+                  <div class="cta-text">
+                    <h4>Phone</h4>
+                    <span>9345295731</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a
+                  href="mailto:createat2024@gmail.com"
+                  class="contact-items"
+                  target="_blank"
+                >
+                  <i class="far fa-envelope-open"></i>
+                  <div class="cta-text">
+                    <h4>E-Mail</h4>
+                    <span>createat2024@gmail.com</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a
+                  href="https://www.linkedin.com/in/krishnasamy-palaniraj-e1205042/"
+                  class="contact-items"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <div class="cta-text">
+                    <h4>LinkedIn</h4>
+                    <span>krishnasamy palaniraj</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a
+                  href="https://github.com/Krishstudio2"
+                  class="contact-items"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  <div class="cta-text">
+                    <h4>GitHub</h4>
+                    <span>Krishstudio2</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="copyright-text">
+          <p>Copyright &copy; 2024, All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 900,
+      });
+
+      // Preloader script
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.querySelector(".preloader").style.display = "none";
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
